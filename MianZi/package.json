@@ -2,7 +2,7 @@
   "name": "ammrb",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "kangdong",
+  "author": "lixuhong&&kangdong",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
