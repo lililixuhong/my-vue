@@ -1,0 +1,72 @@
+{
+  "data": [
+    {
+      "id": 3424,
+      "prodect": "一舍小样茶-包月（简单易用）",
+      "stock": "2000",
+      "sale": "mc_5658",
+      "platform": "68.00",
+      "commission": "8.00",
+      "sales": "1000",
+      "weight": "200",
+      "shelves": "上架"
+    },
+    {
+      "id": 3119,
+      "prodect": "包月（简单易用）",
+      "stock": "2300",
+      "sale": "mc_5665",
+      "platform": "78.00",
+      "commission": "8.12",
+      "sales": "12000",
+      "weight": "200",
+      "shelves": "下架"
+    },
+    {
+      "id": 888888,
+      "prodect": "一舍",
+      "stock": "2500",
+      "sale": "mc_5621",
+      "platform": "8.00",
+      "commission": "8.00",
+      "sales": "1000",
+      "weight": "14",
+      "shelves": "上架"
+    },
+    {
+      "id": 78,
+      "prodect": "呵呵",
+      "stock": "2180",
+      "sale": "mc_5628861",
+      "platform": "82.00",
+      "commission": "8.00",
+      "sales": "1850",
+      "weight": "140",
+      "shelves": "上架"
+    },
+    {
+      "id": 666,
+      "prodect": "导航手机",
+      "stock": "289",
+      "sale": "mc_562891",
+      "platform": "821.00",
+      "commission": "8525.00",
+      "sales": "456",
+      "weight": "184",
+      "shelves": "上架"
+    },
+    {
+      "id": 99,
+      "prodect": "大家思考的",
+      "stock": "248",
+      "sale": "mc_562sdd1",
+      "platform": "1.00",
+      "commission": "2.00",
+      "sales": "59360",
+      "weight": "14",
+      "shelves": "上架"
+    }
+  ],
+  "ret": "ok",
+  "pageSize":"28"
+}

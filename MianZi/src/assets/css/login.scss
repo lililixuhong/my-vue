@@ -1,0 +1,159 @@
+.loginin {
+  height: calc(100vh);
+  background: #fff;
+  .del-btn {
+    padding: .5rem;
+    width: 1rem;
+    display: inline-block;
+    background: #ccc url(../../assets/image/icon/close.png) no-repeat center center;
+    background-size: 40%;
+    border-radius: 50%;
+    vertical-align: middle;
+  }
+  .header {
+    .arrow {
+      transform: rotate(-135deg);
+      margin-left: .5rem;
+    }
+    h1 {
+      font-size: .9rem;
+    }
+    .closeLogin {
+      display: inline-block;
+      color: #999;
+      font-size: 1.2rem;
+      width: 2rem;
+      height: 2.5rem;
+      background: url(../../assets/image/icon/close.png) no-repeat center center;
+      background-size: 40%;
+    }
+  }
+   ::-webkit-input-placeholder {
+    color: #ccc;
+    font-size: .75rem;
+  }
+  .am-login {
+    padding-top: 8.5rem;
+    padding-left: .75rem;
+    .account,
+    .password,
+    .auth {
+      border-bottom: .05rem solid #e6e6e6;
+      text-align: left;
+      margin-bottom: 1.5rem;
+      position: relative;
+      span {
+        display: inline-block;
+        width: 3.5rem;
+        font-size: .75rem;
+        color: #333;
+        line-height: 2rem;
+      }
+      input {
+        color: #333;
+        font-size: .75rem;
+        line-height: 2rem;
+        width: 12rem;
+      }
+      .getAuth {
+        position: absolute;
+        font-size: .6rem;
+        right: 1rem;
+        padding-left: 1rem;
+        top: .6rem;
+        color: #11abcf;
+        border-left: .05rem solid #e6e6e6;
+        >input {
+          width: auto;
+          line-height: normal;
+          color: #11abcf;
+          background: none;
+        }
+      }
+    }
+    .submit {
+      height: 2.2rem;
+      width: 90%;
+      margin-left: .75rem;
+      line-height: 2.2rem;
+      background: #ccc;
+      border-radius: 2.2rem;
+      color: #fff;
+      margin-bottom: .8rem;
+      &.ok {
+        background: #11abcf;
+      }
+    }
+    .protoct {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      padding: 0.2rem 0;
+      i {
+        display: inline-block;
+        width: .65rem;
+        height: .65rem;
+        border: .05rem solid #999;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: .5rem;
+        vertical-align: middle;
+      }
+      .protoctContent {
+        display: inline-block;
+        font-size: .6rem;
+        color: #ccc;
+        a {
+          color: #11abcf;
+        }
+      }
+    }
+    div.otherHandle {
+      margin-bottom: 6rem;
+      .register {
+        float: left;
+        margin-left: .75rem;
+        color: #11abcf;
+      }
+      .forgot {
+        float: right;
+        margin-right: 1.5rem;
+        color: #999;
+      }
+    }
+    >div.shortcut {
+      text-align: right;
+      color: #11abcf;
+      padding-right: 1.1rem;
+      padding-bottom: 1.2rem;
+    }
+  }
+  .otherLogin {
+    P,
+    a {
+      color: #9aaeb3;
+      font-size: .6rem;
+    }
+    .loginBtnList {
+      width: 70%;
+      margin: 1rem auto 0;
+      padding-bottom: 2rem;
+      .loginBtn {
+        i {
+          display: inline-block;
+          width: 2.5rem;
+          height: 2.5rem;
+          border-radius: 50%;
+          overflow: hidden;
+          background: url(../../assets/image/icon/userCenter/wechat.png) no-repeat center center;
+          background-size: contain;
+        }
+      }
+    }
+  }
+  .protocol {
+    padding: 3.25rem .75rem .75rem;
+    background: #f0f0f0;
+    color: #666;
+    text-align: left;
+  }
+}

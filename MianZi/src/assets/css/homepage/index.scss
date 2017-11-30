@@ -1,0 +1,263 @@
+.homePage {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem; // 顶部
+  .header {
+    .left .arrow {
+      width: .4rem;
+      height: .4rem;
+      transform: rotate(135deg);
+      margin-bottom: .3rem;
+      margin-left: .2rem;
+    }
+    .logo {
+      position: absolute;
+      margin: auto;
+      width: 50%;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      & div {
+        height: 100%;
+      }
+      img {
+        width: 4rem;
+        height: 0.85rem;
+      }
+    }
+    .right i {
+      display: block;
+      width: 2.5rem;
+      height: 2.5rem;
+      background: url(../../assets/image/icon/homepage/search.png) no-repeat center center;
+      background-size: 40% 40%;
+    }
+  }
+  .content {
+    background: #f5f5f5;
+    .homepageTitle {
+      padding: .8rem .75rem;
+      text-align: left;
+      .title-m {
+        color: #333;
+        font-size: .75rem;
+      }
+      a {
+        font-size: .6rem;
+        color: #999;
+        span {
+          margin-right: .3rem;
+          display: inline-block;
+          vertical-align: middle;
+        }
+        .arrow {
+          width: .3rem;
+          height: .3rem;
+        }
+      }
+    }
+    .banner {
+      >div:first-child,
+      * {
+        height: inherit;
+        overflow: hidden;
+      }
+    } // 导航
+    .index-nav {
+      background: #fff;
+      .flexItem {
+        width: 25%;
+        display: inline-block;
+      }
+      img {
+        display: inline-block;
+        width: 2rem;
+        height: 2rem;
+        vertical-align: top;
+      }
+      p {
+        color: #666;
+        font-size: 0.6rem;
+      }
+    } // 面子公告  
+    .faceNotice {
+      background: #fff;
+      margin: .5rem 0;
+      text-align: left;
+      .noticeTitle {
+        height: 1.5rem;
+        & div {
+          display: inline-block;
+        }
+        & div.left {
+          width: 4.6rem;
+          background-color: #6bd6ee;
+          border-top-right-radius: .7rem;
+          border-bottom-right-radius: .7rem;
+          height: 100%;
+          & div {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            span {
+              font-family: PingFangSC;
+              font-size: 0.6rem;
+              color: #ffffff;
+              font-family: PingFangSC;
+              letter-spacing: 2.4px;
+              position: relative;
+            }
+            span>i {
+              background: none;
+              position: absolute;
+              border-radius: 0;
+            }
+            i.left {
+              width: 0.25rem;
+              height: 0.4rem;
+              left: -.4rem;
+              top: .15rem;
+              border-top: 0.05rem solid #fff;
+              border-left: 0.05rem solid #fff;
+            }
+            i.right {
+              width: 0.25rem;
+              height: 0.4rem;
+              right: -0.3rem;
+              bottom: 0.09rem;
+              border-bottom: 0.05rem solid #fff;
+              border-right: 0.05rem solid #fff;
+            }
+          }
+        }
+        & div.right {
+          padding-left: .5rem;
+          font-family: PingFangSC;
+          font-size: .7rem;
+          letter-spacing: 0.7px;
+          text-align: left;
+          color: #08bae3;
+        }
+      }
+      .faceNoticeContent {
+        background-color: #fbf4e4;
+        .top {
+          & .left {
+            padding: .6rem 0.75rem;
+          }
+          & .right {
+            padding: .6rem 0;
+            & div {
+              width: 100%;
+              height: 50%;
+            }
+          }
+          & div {
+            width: 50%;
+            height: 9.375rem;
+            & img {
+              width: 100%;
+              height: 100%;
+              vertical-align: middle;
+            }
+          }
+        }
+        .bottom {
+          & div {
+            width: 50%;
+            height: 7rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          img {
+            width: 100%;
+            height: 3.9rem;
+          }
+        }
+      }
+    } // 广告位
+    .advertising {
+      padding: 0 0.75rem;
+      margin: 0.5rem 0;
+    } // 美肤推荐
+    .skinBeauty {
+      background-color: #fff;
+      // padding: 0 .75rem;
+      h3 {
+        height: 1.5rem;
+        line-height: 1.5rem;
+        color: #333;
+        font-size: .75rem;
+        font-family: PingFangSC;
+        font-size: 0.75rem;
+        font-weight: 500;
+        letter-spacing: 1.5px;
+        text-align: left;
+        position: relative;
+        span {
+          font-size: 0.55rem;
+          position: absolute;
+          top: 0;
+          right: 0;
+          color: #999999;
+          >i {
+            width: 0.35rem;
+            height: 0.35rem
+          }
+        }
+      }
+      ul {
+        li {
+          .left {
+            >div {
+              width: 6rem;
+              img {
+                width: 6rem;
+                height: 4.5rem;
+                vertical-align: top;
+               
+              }
+            }
+          }
+          .right {
+            padding-left: .2rem;
+            position: relative;
+            p {
+              width: 10.6rem;
+              text-align: left;
+              color: #333;
+              line-height: 1rem;
+              font-size: .75rem;
+            }
+            div.info {
+              width: 10.6rem;
+              font-size: .5rem;
+              text-align: left;
+              position: absolute;
+              bottom: 0;
+              left: .75rem;
+              >span:first-child {
+                color: #08bae3
+              }
+              i {
+                font-size: 1rem;
+              }
+              > :nth-child(2) {
+                padding-left: .5rem;
+                color: red;
+                font-family: PingFangSC;
+                color: #999999;
+                font-size: 0.3rem;
+                letter-spacing: 1px;
+                text-align: left;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

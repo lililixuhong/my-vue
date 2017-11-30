@@ -1,0 +1,120 @@
+.beautySalon {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    .header {
+        .left .arrow {
+            width: .4rem;
+            height: .4rem;
+            transform: rotate(135deg);
+            margin-bottom: .3rem;
+            margin-left: .2rem;
+        }
+        .searchInput {
+            display: inline-block;
+            height: 1.5rem;
+            width: 12rem;
+            background: #f2f2f2;
+            border-radius: 1.5rem;
+            margin-top: .5rem;
+            line-height: 1.5rem;
+            position: relative;
+            i {
+                position: absolute;
+                left: .3rem;
+                top: 0;
+                width: 1.5rem;
+                height: 1.5rem;
+                background: url(../../assets/image/icon/homepage/search.png) no-repeat center center;
+                background-size: 45% 45%;
+            }
+            input {
+                height: 1.4rem;
+                background: transparent;
+                color: #999;
+                width: 8rem;
+                font-size: .6rem;
+            }
+        }
+        .right {
+            a {
+                margin-right: .75rem;
+                font-size: .75rem;
+            }
+        }
+    }
+    .storeList {
+        background: #f2f2f2;
+        .storeItem {
+            display: block;
+            width: 100%;
+            height: 9rem;
+            // background: #fff url(../../assets/image/test/banner.png) no-repeat center center;
+            background-size: 100% 100%;
+            margin-bottom: .5rem;
+            position: relative;
+            color: #666;
+            .storeImg {
+                float: left;
+                width: 4rem;
+                height: 4rem;
+                border-radius: .25rem;
+            }
+            .recommend {
+                position: absolute;
+                right: 0;
+                top: .5rem;
+                line-height: 1rem;
+                padding: 0 .7rem;
+                border-radius: 1rem 0 0 1rem;
+                background: rgba(0, 0, 0, .2);
+                color: #fff;
+                i {
+                    width: .5rem;
+                    height: .5rem;
+                    display: inline-block;
+                }
+                .num {
+                    background: #fff url(../../assets/image/icon/beautySalon/peason.png) no-repeat center center;
+                    background-size: contain;
+                    margin-right: .2rem;
+                }
+                .like {
+                    background: #fff url(../../assets/image/icon/beautySalon/peason.png) no-repeat center center;
+                    background-size: contain;
+                    margin-right: .2rem;
+                    margin-left: .5rem;
+                }
+            }
+            .storeName {
+                font-size: .85rem;
+                font-weight: 600;
+                line-height: 1.6;
+                letter-spacing: 0.075rem;
+                text-align: left;
+                left: .75rem;
+                bottom: 1.5rem;
+                position: absolute;
+            }
+            .storeAddress {
+                position: absolute;
+                left: 0;
+                bottom: 0.5rem;
+                width: 100%;
+                padding-left: .75rem;
+                padding-right: .75rem;
+                text-align: left;
+                .address {
+                    width: .6rem;
+                    height: .6rem;
+                    display: inline-block;
+                    background: #fff url(../../assets/image/icon/beautySalon/address.png) no-repeat center center;
+                    background-size: contain;
+                    margin-right: .2rem;
+                }
+                .orderNum {
+                    float: right;
+                }
+            }
+        }
+    }
+}

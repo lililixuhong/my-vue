@@ -1,0 +1,334 @@
+$price-color:#f25d5d; //价格红
+$theme-blue:#08bae3; //主题蓝(跳转按钮)
+$theme-background-gray:#f0f0f0; //主题灰色大背景
+$font-weight:600; //字体加宽
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  font-size: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+i {
+  font-style: normal;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+input,
+select,
+textarea,
+button {
+  outline: none;
+  border: none;
+}
+
+// 隐藏文本框阴影
+input,
+textarea {
+  -webkit-appearance: none;
+}
+
+html,
+body {
+  max-width: 800px;
+  margin: 0 auto; // height: 100%;
+  position: relative; // 取消手机点击屏幕时，会出现的灰块
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+#app {
+  font-family: 'PingFangSC', 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  font-size: .7rem;
+  min-height: calc(100vh);
+  background: #f5f5f5;
+}
+
+input {
+  font-size: 0.7rem;
+}
+
+.lf {
+  float: left;
+}
+
+.lr {
+  float: right;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clear::after {
+  content: ' ';
+  clear: both;
+  display: block;
+}
+
+.arrow {
+  display: inline-block;
+  width: .5rem;
+  height: .5rem;
+  border-right: .05rem solid #999;
+  border-top: .05rem solid #999;
+  transform: rotate(45deg);
+  vertical-align: middle;
+}
+
+.disFlex {
+  display: -webkit-box;
+  .flexItem {
+    -webkit-box-flex: 1;
+    display: block;
+  }
+}
+
+.red {
+  color: #f25d5d;
+}
+
+.disFlex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  height: 2.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  max-width: 800px;
+  top: 0;
+  background: #fff;
+  box-shadow: 0px 0.5px 0 0 #e6e6e6;
+  z-index: 999;
+  .left {
+    padding: 0 .5rem;
+    font-size: .75rem;
+    position: absolute;
+    left: 0;
+    top: 0; // bottom: 0;
+  }
+  h1 {
+    display: inline-block;
+    font-size: .8rem;
+    font-weight: normal;
+  }
+  .right {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+// 单行隐藏
+.lineHidden {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+// 双行隐藏
+.doubleHidden {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+// 单行影藏
+.oneLineHidden {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+// 自定义对话组件样式
+.dialog {
+  ._content {
+    input {
+      border: 1px solid #ccc;
+    } // Todo other style
+  }
+}
+
+//  提示工具
+.tip {
+  width: 8rem;
+  height: 4.5rem;
+  border-radius: 0.8rem;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 100000000;
+  color: #fafafa;
+  >div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    font-size: .75rem;
+    justify-content: center;
+    align-items: center;
+  }
+  -webkit-animation-name: fadeInOut;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-direction: alternate;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0.1;
+  }
+  10% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+// 淡入
+@keyframes fadeIn {
+  0% {
+    opacity: 0.1;
+  }
+  10% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+// 向上弹出框
+.uppop {
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+  .content {
+    position: absolute;
+    background: #fff;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+    transform: translateY(100%);
+    transition: transform .3s;
+  }
+  .mask {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: rgba(0, 0, 0, .4);
+    z-index: 99;
+    display: none;
+  }
+  &.up {
+    .mask {
+      display: block;
+    }
+    .content {
+      transform: translateY(0);
+    }
+  }
+}
+
+// 向左弹出框
+.aleft {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: calc(100vw);
+  height: calc(100vh);
+  background: #fff;
+  z-index: 1000;
+  transform: translateX(100%);
+  transition: transform .3s;
+  &.left {
+    transform: translateX(0);
+    .return {
+      position: absolute;
+      left: .5rem;
+      top: .3rem;
+      padding: .3rem;
+      font-size: .7rem;
+      color: #333;
+    }
+  }
+}
+
+// 向左弹出框
+.abot {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: calc(100vw);
+  height: calc(100vh);
+  background: #fff;
+  z-index: 1500;
+  transform: translateY(-100%);
+  transition: transform .3s;
+  &.left {
+    transform: translateY(0);
+    .return {
+      position: absolute;
+      left: .5rem;
+      top: .3rem;
+      padding: .3rem;
+      font-size: .7rem;
+      color: #333;
+    }
+  }
+}

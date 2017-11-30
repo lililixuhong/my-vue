@@ -1,0 +1,376 @@
+.userCenter {
+  padding-bottom: 2.5rem;
+  .top {
+    width: 100%;
+    height: 8.2rem;
+    text-align: right;
+    padding: .5rem .5rem 0;
+    background: #fff url(../../assets/image/icon/userCenter/center-bg.png) no-repeat;
+    background-size: contain;
+    position: relative;
+    .handle {
+      height: 1.6rem; // a {
+      //   display: inline-block;
+      //   width: 1.5rem;
+      //   height: 1.5rem;
+      //   margin-left: 1rem;
+      //   &.msg {
+      //     background: url(../../assets/image/icon/userCenter/msg.png) no-repeat center;
+      //     background-size: 70% 70%;
+      //     position: relative;
+      //     i {
+      //       position: absolute;
+      //       width: .35rem;
+      //       height: .35rem;
+      //       border-radius: 50%;
+      //       top: .2rem;
+      //       right: .2rem;
+      //       background: #fb5d5d;
+      //     }
+      //   }
+      //   &.set {
+      //     background: url(../../assets/image/icon/userCenter/set.png) no-repeat center;
+      //     background-size: 70% 70%;
+      //   }
+      // }
+    }
+    .info {
+      text-align: left;
+      .headImg {
+        display: inline-block;
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 50%;
+        overflow: hidden;
+        vertical-align: middle;
+        margin-right: .2rem;
+      }
+      .name {
+        display: inline-block;
+        font-size: 1.1rem;
+        ;
+        line-height: 4;
+        color: #ffffff;
+      }
+      .vip {
+        position: absolute;
+        font-size: .7rem;
+        line-height: 2;
+        letter-spacing: 0.6px;
+        text-align: left;
+        color: #14d9f8;
+        background: #e1fbff;
+        padding: 0 .5rem;
+        right: 0;
+        top: 50%;
+        transform: translateY(-40%);
+        border-radius: 1.4rem 0 0 1.4rem;
+        .arrow {
+          border-color: #14d9f8;
+        }
+      }
+    }
+  }
+  .amTopM {
+    padding-left: .75rem;
+    background: #fff;
+    margin-bottom: .6rem;
+    .title {
+      text-align: left;
+      display: block;
+      font-size: .8rem;
+      line-height: 2.5rem;
+      color: #333;
+      border-bottom: .05rem solid #e6e6e6;
+      .allOrders {
+        float: right;
+        font-size: .6rem;
+        color: #999;
+        margin-right: .5rem;
+        .arrow {
+          width: .3rem;
+          height: .3rem;
+          margin-top: -.15rem;
+        }
+      }
+    }
+    .statusList {
+      padding: .8rem 0;
+      a {
+        float: left;
+        width: 25%;
+        i {
+          display: inline-block;
+          width: 2rem;
+          height: 1.5rem;
+          margin-bottom: .2rem;
+          &.pay {
+            background: url(../../assets/image/icon/userCenter/pay.png) no-repeat center;
+            background-size: contain;
+          }
+          &.server {
+            background: url(../../assets/image/icon/userCenter/server.png) no-repeat center;
+            background-size: contain;
+          }
+          &.refund {
+            background: url(../../assets/image/icon/userCenter/refund.png) no-repeat center;
+            background-size: contain;
+          }
+          &.finish {
+            background: url(../../assets/image/icon/userCenter/finish2.png) no-repeat center;
+            background-size: contain;
+          }
+        }
+      }
+    }
+  }
+  .amMidM {
+    padding-left: .75rem;
+    background: #fff;
+    line-height: 2.5rem;
+    text-align: left;
+    li {
+      border-bottom: .05rem solid #e6e6e6;
+      color: #333;
+      font-size: .7rem;
+      a {
+        display: block;
+      }
+      i {
+        margin-top: 1rem;
+        margin-right: .5rem;
+      }
+    }
+  }
+}
+
+.set,
+.account {
+  padding-top: .5rem;
+  .aleft {
+    .arrow {
+      transform: rotate(225deg);
+      margin-top: -0.1rem;
+    }
+    .content {
+      margin: 1rem 0;
+      .nickname {
+        width: 90%;
+        padding: 0 .5rem;
+        line-height: 1.5rem;
+        border: .05rem solid #e6e6e6;
+        border-radius: .25rem;
+        color: #666;
+      }
+      .chooseSex {
+        display: inline-block;
+        margin: 0 1rem;
+      }
+    }
+  }
+  .info {
+    background: #fff;
+    padding-left: .75rem;
+    text-align: left;
+    font-size: .7rem;
+    color: #333;
+    li {
+      border-bottom: .05rem solid #e6e6e6;
+      line-height: 2.5rem;
+      padding-right: .75rem;
+      a {
+        display: block;
+      }
+      &.first {
+        line-height: 4.5rem;
+        overflow: hidden;
+        padding: .5rem .75rem .5rem 0;
+      }
+      span {
+        font-size: .6rem;
+        color: #666;
+        label {
+          display: inline-block;
+          width: 3.5rem;
+          height: 3.5rem;
+        }
+        i {
+          margin-left: .5rem;
+        }
+        .headImg {
+          width: 3.5rem;
+          height: 3.5rem;
+          border-radius: 50%;
+          overflow: hidden;
+          vertical-align: middle;
+        }
+        .uploadImg {
+          display: none;
+        }
+      }
+      input {
+        float: right;
+        margin-top: .5rem;
+        height: 1.5rem;
+        text-align: right;
+        padding-right: 1rem;
+        width: 10rem;
+        margin-right: -.5rem;
+        color: #666;
+      }
+    }
+  }
+  .forgotPwd {
+    padding-right: .75rem;
+    color: #11abcf;
+    margin-top: 1rem;
+    font-size: .6rem;
+    float: right;
+    display: inline-block;
+  }
+  .loginout {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    background: #fff;
+    font-size: .75rem;
+    color: #666;
+    border-top: .05rem solid #e6e6e6;
+  }
+  .tips {
+    font-size: .6rem;
+    padding-left: .75rem;
+    margin: .5rem 0;
+    text-align: left;
+    color: #666;
+  }
+  .sure {
+    width: 90%;
+    background: #ccc;
+    height: 2.2rem;
+    line-height: 2.2rem;
+    border-radius: 2.2rem;
+    color: #fff;
+    font-size: .8rem;
+    margin: 1rem auto 0;
+    &.ok {
+      background: #11abcf;
+    }
+  }
+}
+
+.mycards {
+  padding: .75rem .75rem 0;
+  .nodata {
+    font-size: .9rem;
+    position: fixed;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .card {
+    display: block;
+    height: 8rem;
+    background: url(../../assets/image/icon/userCenter/card-bg.png) no-repeat;
+    background-size: contain;
+    text-align: left;
+    position: relative;
+    font-size: .6rem;
+    .cardInfo {
+      float: left;
+      margin: 3rem 0 0 1.5rem;
+      p {
+        color: #fff;
+        &.cardType {
+          font-size: 1.5rem;
+          margin-bottom: .5rem;
+        }
+      }
+    }
+    .cardCode {
+      position: absolute;
+      right: 1rem;
+      bottom: 1rem;
+      color: #fff;
+    }
+    .qrcode {
+      position: absolute;
+      width: 3rem;
+      height: 3rem;
+      top: 2.3rem;
+      right: 1.5rem;
+    }
+  }
+  .transactionDetails {
+    width: calc(100vw);
+    margin-left: -.75rem;
+    text-align: left;
+    padding-left: .75rem;
+    background: #fff;
+    >p {
+      height: 2.5rem;
+      line-height: 2.5rem;
+      border-bottom: .05rem solid #e6e6e6;
+      span {
+        float: right;
+        margin-right: .75rem;
+        color: #08bae3;
+      }
+    }
+    .detailList {
+      height: calc(100vh - 11.3rem);
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      -webkit-scroll-snap-type: mandatory;
+      li {
+        border-bottom: .05rem solid #e6e6e6;
+        height: 3rem;
+        overflow: hidden;
+        .nameTime {
+          float: left;
+          margin: .5rem 0;
+          .name {
+            font-size: .65rem;
+            color: #333333;
+            margin-bottom: .2rem;
+          }
+          .time {
+            font-size: .65rem;
+            color: #999999;
+          }
+        }
+        .money {
+          float: right;
+          line-height: 3rem;
+          margin-right: .75rem;
+          color: #666;
+        }
+      }
+    }
+  }
+}
+
+.qrcodes {
+  position: relative;
+  padding-top: .05rem;
+  background: #f0f0f0;
+  height: calc(100vh);
+  .code {
+    margin: 4rem auto 1rem;
+    display: inline-block;
+    background: #fff;
+    box-shadow: .05rem .05rem .5rem rgba(0, 0, 0, .2);
+  }
+  .tips {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 2rem;
+    font-size: .75rem;
+    color: #cccccc;
+  }
+}

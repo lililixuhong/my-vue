@@ -1,0 +1,683 @@
+.storeDetail {
+    // padding-bottom: 2.5rem;
+    .header.scrolled {
+        box-shadow: 0px 0.5px 0 0 #e6e6e6;
+        position: fixed;
+        background: #fff;
+        .left {
+            .arrow{ 
+                transform: rotate(-135deg);
+                margin-left: .4rem;
+            }
+        }
+        .right {
+            i {
+                display: inline-block;
+                width: 2rem;
+                height: 1.5rem;
+                margin-top: .5rem;
+                margin-right: .4rem;
+            }
+            .attened {
+                background: #fff url(../../assets/image/icon/beautySalon/attened.png) no-repeat center center;
+                background-size: 60%;
+            }
+            .noatten {
+                background: #fff url(../../assets/image/icon/beautySalon/noatten.png) no-repeat center center;
+                background-size: 60%;
+            }
+            .share {
+                background: #fff url(../../assets/image/icon/beautySalon/share.png) no-repeat center center;
+                background-size: 60%;
+            }
+        }
+    }
+    .header:not(.scrolled) {
+        background: transparent;
+        box-shadow: none;
+        position: absolute;
+        .left {
+            span {
+                display: inline-block;
+                width: 1.2rem;
+                height: 1.2rem;
+                background: rgba(0, 0, 0, .2);
+                border-radius: 50%;
+                margin-top: .4rem;
+                margin-left: .2rem;
+                line-height: 1.1rem;
+                .arrow{ 
+                    width: .4rem;
+                    height: .4rem;
+                    transform: rotate(-135deg);
+                    border-color: #fff;
+                    margin-left: .2rem;
+                }
+            }
+        }
+        .right{
+            width:1.075rem;
+            height: 0.25rem;
+            background-image: url('../../assets/image/beautySalon/storeDetail1 (3).png');
+            background-position: center;
+            background-size: cover;
+            margin-top: 1rem;
+            margin-right:0.75rem;
+        }
+    }
+    .content {
+        .banner {
+            >div:first-child, * {
+                height: inherit;
+                overflow: hidden;
+            }
+        }
+        .severInfo {
+            width: 100%;
+            background: #fff;
+            margin-bottom: 0.5rem;
+            // border-bottom: .025rem solid #e6e6e6;
+            .namePrice {
+                padding: .75rem;
+                .severName {
+                    font-size: 22px;
+                    // font-weight: 800;
+                    line-height: 1.5;
+                    letter-spacing: .08rem;
+                    text-align: left;
+                    color: #333333;
+                }
+                .severPrice {
+                    text-align: left;
+                    em {
+                        font-size: 22px;
+                        font-weight: 600;
+                        line-height: 1.33;
+                        letter-spacing: .09rem;
+                        font-style: normal;
+                        color: $price-color;
+                        margin-right: .2rem;
+                    }
+                    del {
+                        font-size: 12px;
+                        font-weight: 300;
+                        line-height: 2.4;
+                        text-align: left;
+                        color: #999999;
+                    }
+                    i {
+                        display: inline-block;
+                        width: .6rem;
+                        height: .6rem;
+                        background: #fff url(../../assets/image/icon/beautySalon/clock.png) no-repeat center center;
+                        background-size: contain;
+                        margin-left: .5rem;
+                        margin-right: .2rem;
+                        vertical-align: middle;
+                    }
+                    span {
+                        font-size: 12px;
+                        font-weight: 300;
+                        line-height: 2.67;
+                        letter-spacing: .04rem;
+                        text-align: left;
+                        color: #999999;
+                    }
+                }
+            }
+            .share {
+                margin-top: 1rem;
+                i {
+                    display: inline-block;
+                    width: 2rem;
+                    height: 2rem;
+                }
+                .attenbtn {
+                    background: #fff url(../../assets/image/icon/beautySalon/attened.png) no-repeat center center;
+                    background-size: 60%;
+                    margin-right: .8rem;
+                }
+                .noattenbtn {
+                    background: #fff url(../../assets/image/icon/beautySalon/noatten.png) no-repeat center center;
+                    background-size: 60%;
+                    margin-right: .8rem;
+                }
+                .sharebtn {
+                    background: #fff url(../../assets/image/icon/beautySalon/share.png) no-repeat center center;
+                    background-size: 60%;
+                    margin-right: .75rem;
+                }
+            }
+        }
+        .ticket {
+            background: #fff;
+            text-align: left;
+            line-height: 2.2rem;
+            margin-bottom: .5rem;
+            em {
+                font-style: normal;
+                font-size: .65rem;
+                font-weight: 300;
+                line-height: 1.85;
+                color: #333333;
+                margin-left: .75rem;
+                margin-right: .75rem;
+            }
+            span {
+                display: inline-block;
+                background: #fff url(../../assets/image/icon/beautySalon/ticketbg.png) no-repeat center center;
+                background-size: contain;
+                width: 3.75rem;
+                height: 1.2rem;
+                line-height: 1.2rem;
+                font-size: .5rem;
+                text-align: center;
+                color: #ffffff;
+            }
+            .eclip {
+                display: inline-block;
+                width: 2.1rem;
+                height: 2.2rem;
+                float: right;
+                padding: 0 .5rem;
+                margin-right: .75rem;
+                background: #fff url(../../assets/image/icon/beautySalon/eclip.png) no-repeat center center;
+                background-size: 60%;
+            }
+        }
+        .severIntro {
+            background: #fff;
+            padding-left: .75rem;
+            margin-bottom: 0.5rem;
+            // border-bottom: .025rem solid #e6e6e6;
+            .introTit {
+                line-height: 2rem;
+                border-bottom: .025rem solid #e6e6e6;
+                font-size: 0.75rem;
+                font-weight: 300;
+                letter-spacing: 1.5px;
+                text-align: left;
+                color: #333333;
+            }
+            .IntroContent {
+                padding-top: 0.15rem;
+                font-size: 12px;
+                font-weight: 300;
+                line-height: 1.5;
+                letter-spacing: 1.2px;
+                text-align: left;
+                color: #666666;
+            }
+            .lookall {
+                // text-align: right;
+                font-size: 12px;
+                font-weight: 300;
+                line-height: 2;
+                letter-spacing: 1.2px;
+                color: #11abcf;
+                margin-right: .5rem;
+                padding-bottom: .6rem;
+                .arrow {
+                    transform: rotate(135deg);
+                    border-color: #11abcf;
+                    width: .3rem;
+                    height: .3rem;
+                    margin-top: -.3rem;
+                }
+            }
+        }
+        .promise {
+            margin-bottom: .5rem;
+            line-height: 2.2rem;
+            background: #fff;
+            text-align: left;
+            span {
+                display: inline-block;
+                margin-left: 1rem;
+                position: relative;
+                font-size: .6rem;
+                color: #666666;
+                &::before {
+                    content: ' ';
+                    position: absolute;
+                    left: -.5rem;
+                    top: .95rem;
+                    width: .3rem;
+                    height: .3rem;
+                    border-radius: 50%;
+                    background: #91deef;
+                }
+            }
+            .arrow {
+                float: right;
+                margin: .8rem;
+            }
+        }
+        .severContent {
+            background: #fff;
+            padding-left: .75rem;
+            margin-bottom: .5rem;
+            .introTit {
+                line-height: 2rem;
+                font-size: 0.75rem;
+                font-weight: 300;
+                letter-spacing: 1.5px;
+                text-align: left;
+                color: #333333;
+            }
+            .severList {
+                display: -webkit-box;
+                overflow-x: scroll;
+                -webkit-overflow-scrolling:touch;
+                .severItem {
+                    margin-right: .75rem;
+                    &:last-child {
+                        width: .05rem;
+                    }
+                    img {
+                        width: 4.5rem;
+                        height: 4.5rem;
+                        border-radius: .25rem;
+                        overflow: hidden;
+                    }
+                    p {
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        width: 4.5rem;
+                        font-size: .65rem;
+                        font-weight: 300;
+                        line-height: 1.85;
+                        text-align: left;
+                        color: #333333;
+                        &.timer {
+                            color: #999;
+                            font-size: .6rem;
+                        }
+                    }
+                }
+            }
+        }
+        .object {
+            border: none;
+            margin-bottom: .5rem;
+            .IntroContent {
+                padding: .3rem .75rem .75rem 0;
+            }   
+        }
+        .severGates {
+            background: #fff;
+            margin-bottom: .5rem;
+            .gateTit {
+                padding: .8rem .75rem;
+                text-align: left;
+                .title-m {
+                    color: #333;
+                    font-size: .75rem;
+                }
+                a {
+                    font-size: .6rem;
+                    color: #999;
+                    float: right;
+                    span {
+                        margin-right: .2rem;
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                    .arrow {
+                        width: .3rem;
+                        height: .3rem;
+                    }
+                }
+            }
+            .gateList {
+                padding-left: .75rem;
+                border-bottom: .025rem solid #e6e6e6;
+                .gateItem {
+                    padding: .75rem 0;
+                    &:not(:last-child){
+                        border-bottom: .025rem solid #e6e6e6;
+                    }
+                    .gateImg {
+                        width: 3.5rem;
+                        height: 3.5rem;
+                        margin-right: .75rem;
+                        border-radius: .25rem;
+                        overflow: hidden;
+                    }
+                    .gateInfo {
+                        text-align: left;
+                        .gateTop {
+                            font-size: .7rem;
+                            font-weight: 300;
+                            line-height: 1.36;
+                            color: #333333;
+                        }
+                        .gateMid {
+                            i {
+                                display: inline-block;
+                                height: .5rem;
+                                width: 2.5rem;
+                                background: #fff url(../../assets/image/icon/beautySalon/star-y.png) repeat-x;
+                                background-size: contain;
+                                margin-right: .5rem;
+                            }
+                            span {
+                                font-size: 12px;
+                                font-weight: 300;
+                                line-height: 2;
+                                color: #666666;
+                                // padding-left: .5rem;
+                                // border-left: .05rem solid #e6e6e6;
+                            }
+                        }
+                        .gateBot {
+                            i {
+                                display: inline-block;
+                                width: .6rem;
+                                height: .6rem;
+                                margin-right: .3rem;
+                                background: #fff url(../../assets/image/icon/beautySalon/address-b.png) no-repeat center center;
+                                background-size: contain;
+                                vertical-align: text-top;
+                            }
+                            font-size: .6rem;
+                            font-weight: 300;
+                            line-height: 2;
+                            color: #666666;
+                        }
+                    }
+                }
+            }
+            .allGates {
+                display: block;
+                font-size: .6rem;
+                font-weight: 300;
+                line-height: 2.2rem;
+                text-align: center;
+                letter-spacing: .2rem;
+                color: #11abcf;
+            }
+        }
+        .assess {
+            margin-bottom: .5rem;
+            background: #fff;
+            padding-left: .75rem;
+            text-align: left;
+            .assessTit {
+                font-size: .75rem;
+                font-weight: 300;
+                line-height: 2rem;
+                letter-spacing: 0.04rem;
+                color: #333333;
+                border-bottom: .025rem solid #e6e6e6;
+            }
+            .assessList {
+                
+                .assessItem {
+                    &:not(:last-child){
+                        border-bottom: .025rem solid #e6e6e6;
+                    }
+                    .assessPea {
+                        padding: .8rem .8rem .8rem 0;
+                        .headImg {
+                            width: 2rem;
+                            height: 2rem;
+                            margin-right: .6rem;
+                            border-radius: 50%;
+                            overflow: hidden;
+                        }
+                        .headInfo {
+                            width: 14.5rem;
+                            .tel {
+                                font-size: .7rem;;
+                                font-weight: 300;
+                                line-height: 1.71;
+                                letter-spacing: .05rem;
+                                text-align: left;
+                                color: #333333;
+                                span {
+                                    font-size: .5rem;
+                                    letter-spacing: .05rem;
+                                    text-align: left;
+                                    color: #999999;
+                                    float: right;
+                                    line-height: 1.2rem;
+                                }
+                            }
+                            .recomment {
+                                color: #fff;
+                                span {
+                                    display: inline-block;
+                                    padding: .1rem .5rem;
+                                    border-radius: .7rem;
+                                    background: #91deef;
+                                    font-size: .5rem;
+                                    margin-right: .5rem;
+                                }
+                            }
+                        }
+                    }
+                    .recommentTxt {
+                        font-size: .6rem;
+                        font-weight: 300;
+                        line-height: 2;
+                        letter-spacing: .06rem;
+                        text-align: left;
+                        color: #666666;
+                    }
+                    .recommentImg {
+                        display: flex;
+                        padding-right: .75rem;
+                        margin-top: .5rem;
+                        justify-content: space-between;
+                        img {
+                            width: 5rem;
+                            height: 5rem; 
+                        }
+                    }
+                    .replay {
+                        margin-right: .75rem;
+                        background: #f7f7f7;
+                        margin-top: 1rem;
+                        padding: .5rem;
+                        border-radius: .25rem;
+                        margin-bottom: .75rem;
+                        font-size: .6rem;
+                        font-weight: 300;
+                        min-height: 4rem;
+                        letter-spacing: .06rem;
+                        text-align: left;
+                        color: #666666;
+                        position: relative;
+                        &:before {
+                            position: absolute;
+                            content: ' ';
+                            left: 2rem;
+                            top: -.4rem;
+                            border: .4rem solid transparent;
+                            border-bottom-color: #f7f7f7; 
+                            border-top: none;
+                        }
+                    }
+                }
+            }
+            .allRecomment {
+                display: block;
+                font-size: .6rem;
+                font-weight: 300;
+                line-height: 2;
+                letter-spacing: 0.03rem;
+                color: #11abcf;
+                text-align: center;
+                padding-bottom: .75rem;
+            }
+        }
+    }
+    .gobay {
+        position: fixed;
+        bottom: 0;
+        line-height: 2.5rem;
+        font-size: .8rem;
+        width: 100%;
+        max-width: 800px;
+        background-color: #11abcf;
+        font-weight: 300;
+        letter-spacing: 0.04rem;
+        text-align: center;
+        color: #ffffff;
+    }
+    .uppop {
+        .content {
+            background: #f7f7f7;
+            .title {
+                font-size: 16px;
+                text-align: center;
+                color: #666;
+                line-height: 2.5rem;
+                position: relative;
+                i {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    width: 2.5rem;
+                    background: url(../../assets/image/icon/close.png) no-repeat center center;
+                    background-size: 30%;
+                }
+            }
+            .checkType {
+                margin: 2rem 0;
+                div {
+                    i { 
+                        position: relative;
+                        width: 4rem;
+                        height: 3.5rem;
+                        display: inline-block;
+                        span {
+                            position: absolute;
+                            top: -.4rem;
+                            right: -.4rem;
+                            color: #fff;
+                            font-size: .5rem;
+                            padding: .2rem;
+                            background: #91deef;
+                            font-style: normal;
+                        }
+                        &.gate {
+                            background: #fff url(../../assets/image/icon/beautySalon/dian.png) no-repeat center center;
+                            background-size: contain;
+                        }
+                        &.home {
+                            background: #fff url(../../assets/image/icon/beautySalon/shang.png) no-repeat center center;
+                            background-size: contain;
+                        }
+                    }
+                }
+            }
+            .promiseIntro {
+                padding-left: .75rem;
+                max-height: 20rem;
+                overflow-y: auto;
+                li {
+                    margin-bottom: .5rem;
+                    &:not(:last-child){
+                        border-bottom: .025rem solid #e6e6e6; 
+                    }
+                    p {
+                        font-size: .7rem;
+                        font-weight: 300;
+                        line-height: 1.36;
+                        text-align: left;
+                        color: #333;
+                        margin-bottom: .3rem;
+                    }
+                    div {
+                        font-size: .6rem;
+                        font-weight: 300;
+                        line-height: 1.58;
+                        text-align: left;
+                        color: #666;
+                        padding-bottom: .5rem;
+                    }
+                }
+            }
+            .ticketIntro {
+                li {
+                    padding: .6rem 0 .8rem;
+                    &:not(:last-child){
+                        border-bottom: .025rem solid #e6e6e6; 
+                    }
+                    &.noGet * {
+                        color: #ccc!important;
+                    }
+                    .ticketPrice {
+                        font-size: .6rem;
+                        color: #666;
+                        width: 6rem;
+                        line-height: 3.5rem;
+                        em {
+                            font-size: 1.5rem;
+                            font-style: normal;
+                        }
+                    }
+                    .ticketDetail {
+                        text-align: left;
+                        .ticketName {
+                            font-size: .8rem;
+                            font-weight: 300;
+                            color: #666666;
+                        }
+                        .useCondition {
+                            font-size: .6rem;
+                            font-weight: 300;
+                            color: #999999;
+                            margin-top: .5rem;
+                        }
+                    }
+                    .chooseBtn {
+                        line-height: 3.5rem;
+                        margin-right: 1rem;
+                        .showBtn {
+                            display: inline-block;
+                            width: 1rem;
+                            height: 1rem;
+                            border-radius: 50%;
+                            background: #fff;
+                            border: .025rem solid #e6e6e6;
+                            margin-left: -1rem;
+                            position: relative;
+                            i {
+                                position: absolute;
+                                left: .1rem;
+                                top: .1rem;
+                                display: inline-block;
+                                width: .7rem;
+                                height: .7rem;
+                                border-radius: 50%;
+                            }
+                        }
+                        input:checked+.showBtn {
+                            border-color: #11abcf;
+                            i {
+                                background: #11abcf;
+                            }
+                        }
+                    }
+                }
+            }
+            .close {
+                background-color: #ffffff;
+                box-shadow: inset 0px 0.5px 0 0 rgba(230, 230, 230, 0.9);
+                font-size: .8rem;
+                line-height: 2.5rem;
+                text-align: center;
+                color: #666;
+                &.forTicket {
+                    background: #11abcf;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
